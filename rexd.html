@@ -1,0 +1,31 @@
+nav {
+  position: relative;
+  z-index: 20; /* Підвищуємо пріоритет навігації */
+  background-color: rgba(0, 0, 0, 0.5); /* Напівпрозорий фон для меню */
+  padding: 15px; /* Додати відступи, щоб меню не було впритул до країв */
+  height: 60px; /* Задай висоту меню */
+  display: flex;
+  align-items: center; /* Центруємо текст вертикально */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Центруємо елементи меню по горизонталі */
+}
+
+nav ul li {
+  margin: 0 15px; /* Відступи між елементами меню */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  color: #f39c12; /* Зміна кольору при наведенні */
+}
