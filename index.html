@@ -1,35 +1,44 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Oketra House</title>
-  </head>
-  <body>
-    <h1>Привіт з Oketra House!</h1>
-    <p>Це фан-сайт у стилі GitHub Pages :)</p>
-  </body>
-</html>
-
-<nav>
-  <ul>
-    <li><a href="index.html">Головна</a></li>
-    <li><a href="about.html">Про нас</a></li>
-    <li><a href="news.html">Новини</a></li>
-    <li><a href="gallery.html">Галерея</a></li>
-    <li><a href="contact.html">Контакти</a></li>
-  </ul>
-</nav>
 <head>
   <meta charset="UTF-8" />
   <title>Oketra House</title>
   <style>
     body {
-      /* Вказуємо шлях до зображення */
-      background-image: url('assets/images/ bg.jpg');
-      background-repeat: no-repeat;      /* Не повторювати фон */
-      background-position: center center; /* Центруємо фон */
-      background-size: cover;            /* Масштабуємо фон, щоб він покривав весь екран */
-      background-attachment: fixed;      /* Фіксуємо фон при прокручуванні */
+      background-image: url('assets/images/bg.jpg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      background-attachment: fixed;
+      margin: 0; /* Видалити зайві відступи */
+      padding: 0; /* Видалити зайві відступи */
+    }
+
+    nav {
+      position: relative;
+      z-index: 10;
+      background-color: rgba(0, 0, 0, 0.5); /* Напівпрозорий фон для меню */
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    nav ul li a:hover {
+      color: #f39c12; /* Зміна кольору при наведенні */
     }
   </style>
 </head>
